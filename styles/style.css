@@ -1,0 +1,327 @@
+@charset "UTF-8";
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+body footer {
+  height: 50px;
+  background-color: #1d2738;
+}
+body footer p {
+  margin: 0;
+  font-weight: 200;
+  color: #ccd0da;
+}
+body .contact {
+  color: #ffff;
+  background-color: #263246;
+}
+body .contact .contact-message {
+  resize: none;
+  height: 200px;
+}
+body .contact h3 {
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+body .contact h3::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: red;
+  bottom: 30px;
+  left: 0;
+  bottom: 0;
+}
+body .contact ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body .contact ul li {
+  margin: 20px 0 10px 0;
+  color: #868990;
+}
+body .contact ul li i {
+  margin-right: 10px;
+}
+body .mb-100 {
+  padding-bottom: 100px;
+}
+body .lead-2 {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+body .img-center {
+  display: block;
+  margin: 0 auto;
+}
+body .section-margin {
+  margin: 200px 0 200px 0;
+}
+body .mt-100 {
+  margin-top: 100px;
+}
+body .header {
+  position: relative;
+  background-image: url("../img/lol.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+body .header .non-rel {
+  position: inherit;
+}
+body .header .header-text {
+  padding: 20px 0 20px 0;
+  border: 2px solid #4b4b4b;
+}
+body .header .header-text p {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+body .header .header-lead {
+  text-align: center;
+  padding: 20px;
+}
+body .header .container-fluid {
+  height: 100%;
+}
+body .header .container-fluid .nav-row {
+  z-index: 2;
+}
+body .header .fa-bars {
+  padding: 5px 20px 0 20px;
+  display: none;
+}
+body .header .nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  opacity: 0.8;
+  background-color: #ffff;
+}
+body .header .nav-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+body .header .nav-ul li a {
+  text-decoration: none;
+  color: #212529;
+}
+body .header .nav-ul li:hover {
+  font-weight: 600;
+}
+body .header .halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+body .plan .plan-container a {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #6b6bcf;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+}
+body .plan .plan-container a:hover {
+  text-decoration: none;
+}
+body .plan .plan-container .plan-content {
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  padding: 30px 10px 30px 10px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+body .plan .plan-container .plan-content h3 {
+  letter-spacing: 2px;
+  color: #6b6bcf;
+}
+body .plan .plan-container .plan-content ul {
+  padding: 0px;
+}
+body .plan .plan-container .plan-content ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+body .plan .plan-container .plan-content ul li::before {
+  content: "☑";
+  color: #6b6bcf;
+  margin-right: 10px;
+}
+body .lets-talk {
+  background-color: #18191d;
+  color: #e2e2e2;
+  text-align: center;
+}
+body .lets-talk a {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #ececeb;
+  color: black;
+  border-radius: 0px 0px 0px 0px;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+}
+body .lets-talk a:hover {
+  text-decoration: none;
+}
+body .team {
+  background: url("../img/team/team-background.jpg") no-repeat fixed;
+}
+body .team .opacity-color {
+  background-color: #39466f87;
+}
+body .team .opacity-color h1 {
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: 4rem;
+}
+body .team .team-container {
+  text-align: center;
+  padding: 30px;
+  background-color: whitesmoke;
+}
+body .team .team-container h3 {
+  margin-top: 20px;
+}
+body .start-info .start-info-container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.14);
+}
+body .start-info h3 {
+  text-align: center;
+}
+body .start-info .fa-center {
+  display: block;
+  text-align: center;
+}
+body .start-info .start-info-container {
+  padding: 30px;
+  text-align: justify;
+}
+body .start-info p {
+  margin-top: 50px;
+}
+body .projects {
+  color: #4a4949;
+  background-color: #eef0ed;
+}
+body .projects h2 {
+  font-size: 35px;
+}
+body .projects h1 {
+  position: relative;
+}
+body .projects h1::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 20%;
+  margin: 0 auto;
+  background-color: red;
+  bottom: 30px;
+  left: 40%;
+}
+body .projects .projects-img {
+  padding: 0;
+}
+body .projects .projects-content {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+}
+body .projects .projects-content a {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #fcaf3b;
+  color: white;
+  border-radius: 0px 0px 0px 0px;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+}
+body .projects .projects-content a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    opacity: 1 !important;
+  }
+  .nav-bar .nav-ul {
+    text-align: center;
+    display: none !important;
+    position: absolute;
+    top: 60px;
+    width: 100vw !important;
+    background-color: #cbcdc4;
+    padding: 40px 0 40px 0 !important;
+  }
+  .nav-bar .show {
+    display: block !important;
+    animation: fadein 0.5s;
+  }
+  .nav-bar .fa-bars {
+    display: block !important;
+  }
+  .nav-bar li {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .nav-bar li:hover {
+    background-color: #ffff;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav-ul {
+    display: flex !important;
+    top: 0;
+  }
+}
