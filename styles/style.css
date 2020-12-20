@@ -155,11 +155,6 @@ body .header .nav-ul li a {
 body .header .nav-ul li:hover {
   font-weight: 600;
 }
-body .header .halo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 body .plan .plan-container a {
   font-weight: 500;
   text-transform: uppercase;
