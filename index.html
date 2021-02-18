@@ -22,43 +22,61 @@
 <body>
 
     <section class="header">
-        <div class="container-fluid">
-            <div class="row nav-row position-absolute w-100 justify-content-end">
-
-                <nav class='nav-bar'>
-                    <i class="ml-5 fab fa-pied-piper-alt fa-3x"></i>
-                    <ul class="nav-ul col-12  col-md-7 col-lg-5 d-flex align-items-center">
-                        <li class="col -12 col-md-3"><a href="#">About Us</a></li>
-                        <li class="col -12 col-md-3"><a href="#">Team</a></li>
-
-                        <li class="col -12 col-md-3"><a href="#">Projects</a></li>
-                        <li class="col -12 col-md-3"><a href="#">Plan</a></li>
-
-                    </ul>
-                    <i class="fas fa-bars fa-3x"></i>
-                </nav>
-
-
-            </div>
-
-            <div class="row h-100 justify-content-center align-items-center">
-                <div class="non-rel col-10 col-sm-7 col-md-5 col-lg-4">
-                    <div class="col-12 header-text">
-                        <p class="comp-name">Company</p>
-                    </div>
-                    <div class="col-12 header-lead"></div>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo-wrapper">
+                    <img src="./img/landing-logo.png" alt="logo">
                 </div>
-
+                <div class="bar-wrapper align-items-center mr-4">
+                    <i class="fas fa-bars fa-2x bar-icon"></i>
+                </div>
+                <ul class="nav-ul py-3 px-2 d-flex align-items-center">
+                    <li><a href='#about'>about us</a></li>
+                    <li><a href='#team'>team</a></li>
+                    <li><a href='#projects'>projects</a></li>
+                    <li><a href='#plan'>plan</a></li>
+                    <li><a href='#contact'>contact</a></li>
+                    
+                    
+                    <button type="button" class="btn btn-outline-light ml-4">Sign In</button>
+                </ul>
+                
             </div>
-        </div>
+        </nav>
+        <div class="container-fluid d-flex position-relative flex-column align-items-center p-0 h-100">
+
+            <div class="hero container d-flex align-items-center justify-content-between">
+                 <div class="row">
+                     <div class='hero-wrapper p-0 col-10 col-md-6'>
+                         <div>
+                             <h1>Bootstrap 4 Landing Page</h1>
+                             <p class="lead mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.Temporibus rerum molestiae, mollitia dolorem consequatur.</p>
+                             <button type="button" class="btn btn-outline-light ">get started</button>
+
+                         </div>
+                </div>
+                <div class='p-0 col-10 col-md-6'>
+
+                    <img src="./img/hero.png" alt="hero">
+                </div>
+                 </div>
+               
+            </div>
+            <svg class="mt-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path style='width:100%' fill="#ffffff" fill-opacity="1"
+                    d="M0,32L48,69.3C96,107,192,181,288,176C384,171,480,85,576,85.3C672,85,768,171,864,186.7C960,203,1056,149,1152,117.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+
+
+            </svg>
     </section>
-    <section>
+    <section id="cards" class="cards">
         <div class="container">
-            <div class="row mt-100 justify-content-center">
+            <div class="row  justify-content-center">
                 <div class="start-info col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="start-info-container">
+                    <div class="start-info-container p-4">
                         <i class="fa-center fas fa-crosshairs fa-5x"></i>
-                        <h3 class="mt-5">Mission</h3>
+                        <h4 class="mt-3">Mission</h4>
                         <p class="lead-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem quia
                             voluptatibus molestias optio tempora perspiciatis rerum exercitationem architecto veniam.
                         </p>
@@ -66,18 +84,18 @@
 
                 </div>
                 <div class="start-info col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="start-info-container">
+                    <div class="start-info-container p-4">
                         <i class="fa-center far fa-smile fa-5x"></i>
-                        <h3 class="mt-5">Vision</h3>
+                        <h4 class="mt-3">Vision</h4>
                         <p class="lead-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem quia
                             voluptatibus molestias optio tempora perspiciatis rerum exercitationem architecto veniam.
                         </p>
                     </div>
                 </div>
                 <div class="start-info col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="start-info-container">
+                    <div class="start-info-container p-4">
                         <i class="fa-center fas fa-brain fa-5x"></i>
-                        <h3 class="mt-5">Motto</h3>
+                        <h4 class="mt-3">Motto</h4>
                         <p class="lead-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem quia
                             voluptatibus molestias optio tempora perspiciatis rerum exercitationem architecto veniam.
                         </p>
@@ -90,14 +108,14 @@
         </div>
 
     </section>
-    <section class="about mt-100">
+    <section id="about" class="about p-100">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-5 d-flex align-items-center"><img src="img/4307602.jpg" class="img-fluid"
                         alt=""></div>
                 <article class="p-5 col-12 col-md-7">
                     <h1>ABOUT US</h1>
-                    <p class=" my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
+                    <p class="lead  my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
                         amet consectetur adipisicing elit. Cum, sit?</p>
                     <p class="lead-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione unde sunt
                         earum. Debitis
@@ -111,8 +129,9 @@
         </div>
 
     </section>
-    <section class="team">
-        <div class="container-fluid py-5 mt-100 opacity-color">
+    <section id="team" class="p-100">
+        <div class="team">
+        <div class="container-fluid py-5 opacity-color">
             <div class="container">
                 <div class="row">
 
@@ -125,14 +144,14 @@
                                 <div class="team-container rounded">
                                     <img src="img/team/team-1.jpg" class="img-fluid rounded-circle img-center" alt="">
                                     <h3>John</h3>
-                                    <p class="lead">Lorem ipsum</p>
+                                    <p class="lead-2">Lorem ipsum</p>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3 mt-3  rounded">
                                 <div class="team-container rounded">
                                     <img src="img/team/team-2.jpg" class="img-fluid rounded-circle img-center" alt="">
                                     <h3>Mike</h3>
-                                    <p class="lead">Lorem ipsum</p>
+                                    <p class="lead-2">Lorem ipsum</p>
                                 </div>
                             </div>
 
@@ -140,7 +159,7 @@
                                 <div class="team-container rounded">
                                     <img src="img/team/team-5.jpg" class="img-fluid rounded-circle img-center" alt="">
                                     <h3>Ava</h3>
-                                    <p class="lead">Lorem ipsum</p>
+                                    <p class="lead-2">Lorem ipsum</p>
                                 </div>
                             </div>
 
@@ -148,7 +167,7 @@
                                 <div class="team-container rounded">
                                     <img src="img/team/team-6.jpg" class="img-fluid rounded-circle img-center" alt="">
                                     <h3>Camila</h3>
-                                    <p class="lead">Lorem ipsum</p>
+                                    <p class="lead-2">Lorem ipsum</p>
                                 </div>
                             </div>
 
@@ -159,13 +178,15 @@
 
             </div>
         </div>
+        </div>
+
     </section>
 
-    <section class="projects py-5">
+    <section id="projects" class="projects py-5">
         <div class="container  mb-100">
 
             <div class="row mb-5 mb-lg-0">
-               
+
                 <h1 class="col-12 my-5 py-5 text-center">Our Projects</h1>
                 <div class="col-md-12 col-lg-6 col-xl-6 projects-img">
                     <img src="img/projects/projects-1.jpg" class="img-fluid">
@@ -223,9 +244,9 @@
         </div>
     </section>
 
-    <section class="plan">
+    <section id="plan" class="plan p-100">
         <div class="container">
-            <div class="row justify-content-center mt-100">
+            <div class="row justify-content-center">
 
                 <div class="col-10 col-sm-6 col-md-6 col-lg-4 plan-container p-3 ">
                     <div class="plan-content">
@@ -276,10 +297,13 @@
                 </div>
             </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#263246" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,165.3C384,149,480,139,576,160C672,181,768,235,864,234.7C960,235,1056,181,1152,181.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
     </section>
-    <section class="contact">
-        <div class="container mt-100">
-            <div class="row py-5 justify-content-center">
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-12 col-lg-6 px-5">
                     <h3>Contact</h3>
                     <form>
@@ -288,8 +312,9 @@
                         <label for="title">Title:</label><br>
                         <input class="w-100" type="text" name="title" id="title" placeholder="title"><br>
                         <label for="message">Message:</label><br>
-                        <textarea class="contact-message w-100" id="message"  name="message" placeholder="message..." rows="4" cols="50"></textarea>
-                         <input class="w-100" type="submit" value="Send">   
+                        <textarea class="contact-message w-100" id="message" name="message" placeholder="message..."
+                            rows="4" cols="50"></textarea>
+                        <input class="w-100" type="submit" value="Send">
                     </form>
                 </div>
                 <div class="col-10 col-sm-6 col-lg-3 py-4">
@@ -299,7 +324,7 @@
                         <li>Marketing</li>
                         <li>Career</li>
                         <li>Contact us</li>
-                        
+
                     </ul>
                 </div>
                 <div class="col-10 col-sm-6 col-lg-3 py-4">
@@ -313,9 +338,11 @@
 
             </div>
         </div>
+        
     </section>
     <footer class="d-flex align-items-center justify-content-center">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestiae.</p>
     </footer>
     <a href="https://www.freepik.com/vectors/people">People vector created by freepik - www.freepik.com</a>
     <a href='https://pngtree.com/so/flat-wind'>flat wind png from pngtree.com</a>

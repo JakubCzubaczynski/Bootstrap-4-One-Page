@@ -1,0 +1,29 @@
+@import './variables';
+.cards{
+     .start-info {
+         .start-info-container {
+             border-radius: 10px;
+             box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.14)
+         }
+         i{
+             color:$primary-color;
+         }
+         h4 {
+             text-align: center;
+         }
+
+         .fa-center {
+             display: block;
+             text-align: center;
+         }
+
+         .start-info-container {
+            
+             text-align: justify;
+         }
+
+         p {
+             margin-top: 2rem;
+         }
+     }
+}

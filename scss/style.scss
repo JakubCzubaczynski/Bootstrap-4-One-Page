@@ -1,0 +1,104 @@
+@import './animations';
+@import './header';
+@import './cards';
+@import './team';
+@import './projects';
+@import './plan';
+@import './contact';
+html{
+     scroll-behavior: smooth;
+}
+body {
+  
+    //GLOBAL SETTINGS
+
+    font-family: 'Poppins', sans-serif;
+
+    .p-100 {
+        padding-top: 100px;
+    }
+.show{
+    height:100vh;
+    display:block!important;
+    text-align: center;
+    color:#18191d;
+    padding:5rem 1rem;
+  border-bottom: 1px solid $light-color;
+  background: #fff;
+  li{
+      padding:20px;
+      
+  }
+ 
+}
+    .mb-100 {
+        padding-bottom: 100px;
+    }
+
+    .lead-2 {
+        line-height: 1.5;
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.05rem;
+
+    }
+
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section-margin {
+        margin: 200px 0 200px 0;
+    }
+
+    .mt-100 {
+        margin-top: 100px;
+    }
+    //END OF GLOBAL SETTINGS
+
+    .lets-talk {
+        
+        background-color: #18191d;
+        color: rgb(226, 226, 226);
+        text-align: center;
+
+        a {
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: #ececeb;
+            color: black;
+            border-radius: 1rem;
+            padding: 15px 20px 15px 20px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                background: $primary-color;
+                color: $light-color;
+            }
+        }
+    }
+
+    footer {
+        
+        height: 50px;
+        background-color: #1d2738;
+
+        p {
+            margin: 0;
+            font-weight: 200;
+            ;
+            color: #ccd0da;
+
+        }
+    }
+
+}
+
+
+
+
+
+
+

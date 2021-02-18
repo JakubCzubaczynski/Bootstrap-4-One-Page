@@ -1,0 +1,27 @@
+@import './variables';
+ .team {
+     background: url('../img/team/team-background.jpg') no-repeat fixed;
+
+     .opacity-color {
+         background-color: #39466f87;
+
+         h1 {
+             color: whitesmoke;
+             font-weight: 900;
+             font-size: 4rem;
+         }
+     }
+
+     .team-container {
+         text-align: center;
+         padding:10px;
+         background-color: rgb(245, 245, 245);
+img{
+    padding:10px;
+}
+         h3 {
+
+             margin-top: 20px;
+         }
+     }
+ }
