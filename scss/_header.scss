@@ -17,6 +17,10 @@
 
         .hero-wrapper {
             @include flexCenter;
+             @media screen and (max-width: 768px) {
+                 margin-top:200px;
+                 
+             }
         }
 
         img {
@@ -107,7 +111,11 @@
         }
     }
 }
-
+@media screen and (max-width: 420px) {
+    .lead{
+font-size: 1rem;
+    }
+}
 @media screen and (max-width: 768px) {
     .nav-bar {
         display: block !important;

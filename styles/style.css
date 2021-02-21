@@ -40,6 +40,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .header .hero .hero-wrapper {
+    margin-top: 200px;
+  }
+}
+
 .header .hero img {
   display: flex;
   justify-content: center;
@@ -129,6 +135,12 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .lead {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-bar {
     display: block !important;
@@ -159,7 +171,7 @@
 
 .cards .start-info .start-info-container {
   border-radius: 10px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 20px 0px #6b6bcf69;
 }
 
 .cards .start-info i {
@@ -200,7 +212,6 @@
 .team .opacity-color h1 {
   color: whitesmoke;
   font-weight: 900;
-  font-size: 4rem;
 }
 
 .team .team-container {
@@ -213,7 +224,7 @@
   padding: 10px;
 }
 
-.team .team-container h3 {
+.team .team-container h4 {
   margin-top: 20px;
 }
 
@@ -274,6 +285,12 @@
   box-sizing: border-box;
 }
 
+.plan .plan-container .btn-primary {
+  color: #fff;
+  background-color: #6b6bcf;
+  border-color: #6b6bcf;
+}
+
 .plan .plan-container a {
   font-weight: 500;
   text-transform: uppercase;
@@ -296,7 +313,7 @@
   border-radius: 20px;
 }
 
-.plan .plan-container .plan-content h3 {
+.plan .plan-container .plan-content h4 {
   letter-spacing: 2px;
   color: #6b6bcf;
 }
@@ -306,7 +323,7 @@
 }
 
 .plan .plan-container .plan-content ul li {
-  margin-top: 20px;
+  margin-top: 0.5rem;
   list-style: none;
 }
 
