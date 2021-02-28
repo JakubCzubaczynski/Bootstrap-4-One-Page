@@ -23,8 +23,14 @@
             }
         }
 
-        .projects-img {
+        .projects-img-wrapper {
             padding: 0;
+            .projects-img{
+                height:300px;
+                width:100%;
+                object-fit: cover;
+                
+            }
         }
 
         .projects-content {

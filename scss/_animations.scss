@@ -40,3 +40,12 @@
         opacity: 1;
     }
 }
+@keyframes slide {
+    from {
+        transform: translatey(-100%);
+    }
+
+    to {
+        transform: translatey(0);
+    }
+}
